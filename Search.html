@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Search Engine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #logo {
+        width: 300px;
+        margin: 20px auto;
+      }
+      #form {
+        width: 600px;
+        margin: 0 auto;
+      }
+      #query {
+        width: 500px;
+        height: 40px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      #submit {
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+      #submit:hover {
+        background-color: #e8e9ea;
+      }
+      #results {
+        width: 600px;
+        margin: 20px auto;
+      }
+      .result {
+        margin-bottom: 20px;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1a0dab;
+      }
+      .title:hover {
+        text-decoration: underline;
+      }
+      .url {
+        font-size: 14px;
+        color: #006621;
+      }
+      .snippet {
+        font-size: 14px;
+        color: #545454;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="logo.png" alt="My Search Engine Logo" />
+    </div>
+    <div id="form">
+      <form method="get" action="search.php">
+        <input
+          type="text"
+          id="query"
+          name="q"
+          placeholder="Enter your query here"
+        />
+        <input type="submit" id="submit" value="Search" />
+      </form>
+    </div>
+    <div id="results">
+      <!-- This is where the search results will be displayed -->
+    </div>
+  </body>
+</html>

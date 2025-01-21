@@ -1,0 +1,11 @@
+/* access classes with . */
+.red{
+    color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+/* access id with # */
+#firstdiv{
+    font-family: 'Lucida Sans';
+}
